@@ -1,17 +1,24 @@
-export default function TodoList() {
+import react from 'react';
+
+function app() {
   return (
     <>
-      <h1>Hedy Lamarr's Todos</h1>
-      <img 
-        src="https://i.imgur.com/yXOvdOSs.jpg" 
-        alt="Hedy Lamarr" 
-        className="photo" 
-      />
+    <header>
+      <h1>ReCORD</h1>
+    </header>
+  
+    <nav>
       <ul>
-        <li>Invent new traffic lights</li>
-        <li>Rehearse a movie scene</li>
-        <li>Improve the spectrum technology</li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
       </ul>
-    </>
-  );
+    </nav>
+
+  </>
+);
+  
 }
+
+export default app;
