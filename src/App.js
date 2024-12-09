@@ -6,7 +6,7 @@ function App() {
         <h1>Welcome to Our Website</h1>
         <nav>
           <ul>
-            <li>Home</li>
+            <li><link to ="/" >Home</li>
             <li>About Us</li>
             <li>Credit Information Sharing</li>
             <li>Resources</li>
