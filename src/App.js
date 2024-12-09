@@ -1,24 +1,27 @@
-import react from 'react';
+import React from "react";
 
-function app() {
+function App() {
   return (
-    <>
-    <header>
-      <h1>ReCORD</h1>
-    </header>
-  
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-
-  </>
-);
-  
+    <div>
+      <header>
+        <h1>Welcome to Our Website</h1>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Credit Information Sharing</li>
+            <li>Resources</li>
+            <li>Conference</li>
+            <li>Training</li>
+            <li>Contact Us</li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <p>Select a section to explore more about what we offer.</p>
+      </main>
+    </div>
+  );
 }
 
-export default app;
+export default App;
