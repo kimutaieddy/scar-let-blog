@@ -1,23 +1,17 @@
-function todo() {
-
-return (
+export default function TodoList() {
+  return (
     <>
-        <div>
-            <h1>Practice without AI</h1>
-        </div>
-        <img 
-            src="https://theconversation.com/explainer-what-are-memes-20789"
-            alt="AI"
-            className="AI"
-        />
-        <ul>
-            <li>Invent new traffic lights</li>
-            <li>Rehearse a movie scene</li>
-            <li>Improve the spectrum technology</li>
-        </ul>
+      <h1>Hedy Lamarr's Todos</h1>
+      <img 
+        src="https://i.imgur.com/yXOvdOSs.jpg" 
+        alt="Hedy Lamarr" 
+        className="photo" 
+      />
+      <ul>
+        <li>Invent new traffic lights</li>
+        <li>Rehearse a movie scene</li>
+        <li>Improve the spectrum technology</li>
+      </ul>
     </>
-);
+  );
 }
-
-
-export default todo;
