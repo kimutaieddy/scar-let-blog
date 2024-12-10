@@ -1,10 +1,16 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Home from './Home';
+import About from './About';
+import Credit from './Credit';
+import Resources from './Resources';
+import Conference from './Conference';
+import Training from './Training';
+import Contact from './Contact';
 
 function App() {
   return (
     <Router>
       <header style={{ backgroundColor: '#333', padding: '1rem' }}>
-       
         <nav>
           <ul style={{
             listStyle: 'none',
@@ -28,13 +34,13 @@ function App() {
       </header>
       <main style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
         <Routes>
-          <Route path="/" element={<h2>Home</h2>} />
-          <Route path="/about" element={<h2>About Us</h2>} />
-          <Route path="/credit" element={<h2>Credit Information Sharing</h2>} />
-          <Route path="/resources" element={<h2>Resources</h2>} />
-          <Route path="/conference" element={<h2>Conference</h2>} />
-          <Route path="/training" element={<h2>Training</h2>} />
-          <Route path="/contact" element={<h2>Contact Us</h2>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/credit" element={<Credit />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/conference" element={<Conference />} />
+          <Route path="/training" element={<Training />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
     </Router>
