@@ -3,10 +3,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <header style={{ backgroundColor: '#333', padding: '1rem' }}>
-        <h1 style={{ color: 'white', textAlign: 'center', margin: '0 0 1rem' }}>
-          Welcome to Our Website
-        </h1>
+      <header >
+       
         <nav>
           <ul style={{
             listStyle: 'none',
