@@ -15,7 +15,7 @@ function App() {
             backgroundColor: '#0066cc',
             padding: '1rem'
           }}>
-            <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/">Home</Link></li>
+            <li><Link style={{ color: 'white', textDecoration: 'none', padding: '1.5rem' }} to="/">Home</Link></li>
             <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/about">About Us</Link></li>
             <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/credit">Credit Information Sharing</Link></li>
             <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/resources">Resources</Link></li>
