@@ -6,18 +6,18 @@ function App() {
   return (
     <Router>
       <header>
-        <nav>
-            backgroundColor: '#0066cc',
-            padding: '1rem'
+        <nav style={{
+          backgroundColor: '#0066cc',
+          padding: '1rem'
+        }}>
+          <ul style={{
             listStyle: 'none',
             padding: 0,
             margin: 0,
             display: 'flex',
             justifyContent: 'center',
-            gap: '1rem',
-            backgroundColor: '#0066cc',
-            padding: '1rem'
-          <ul>
+            gap: '1rem'
+          }}>
             <li><Link style={{ color: 'white', textDecoration: 'none', padding: '1.5rem' }} to="/">Home</Link></li>
             <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/about">About Us</Link></li>
             <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/credit">Credit Information Sharing</Link></li>
