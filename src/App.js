@@ -1,11 +1,14 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
+import Home from './Home';
+
 function App() {
   return (
     <Router>
       <header>
         <nav>
-          <ul style={{
+            backgroundColor: '#0066cc',
+            padding: '1rem'
             listStyle: 'none',
             padding: 0,
             margin: 0,
@@ -14,7 +17,7 @@ function App() {
             gap: '1rem',
             backgroundColor: '#0066cc',
             padding: '1rem'
-          }}>
+          <ul>
             <li><Link style={{ color: 'white', textDecoration: 'none', padding: '1.5rem' }} to="/">Home</Link></li>
             <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/about">About Us</Link></li>
             <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/credit">Credit Information Sharing</Link></li>
@@ -26,10 +29,11 @@ function App() {
         </nav>
       </header>
       <Routes>
-        {/* Add your Route components here */}
+        <Route path="/" element={<Home />} />
       </Routes>
-    </Router>     
+    </Router>
   );
 }
+
 
 export default App;
