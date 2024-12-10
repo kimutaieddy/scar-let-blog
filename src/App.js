@@ -6,7 +6,9 @@ function App() {
       <header>
         <h1>Welcome to Our Website</h1>
         <nav>
-          <ul>
+          <ul
+          backgroud ="Blue"
+          colour ="white" >
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/credit">Credit Information Sharing</Link></li>
