@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <header >
+      <header style={{ backgroundColor: '#333', padding: '1rem' }}>
        
         <nav>
           <ul style={{
