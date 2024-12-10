@@ -1,16 +1,9 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Home from './Home';
-import About from './About';
-import Credit from './Credit';
-import Resources from './Resources';
-import Conference from './Conference';
-import Training from './Training';
-import Contact from './Contact';
 
 function App() {
   return (
     <Router>
-      <header style={{ backgroundColor: '#333', padding: '1rem' }}>
+      <header>
         <nav>
           <ul style={{
             listStyle: 'none',
@@ -32,18 +25,10 @@ function App() {
           </ul>
         </nav>
       </header>
-      <main style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/credit" element={<Credit />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/conference" element={<Conference />} />
-          <Route path="/training" element={<Training />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
-    </Router>
+      <Routes>
+        {/* Add your Route components here */}
+      </Routes>
+    </Router>     
   );
 }
 
