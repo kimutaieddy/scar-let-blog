@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import './Resources.css';
 
 function Resources() {
-    const [pdfs, setPdfs] = useState([]);
+    const [pdfs, setPdfs] = useState([]); 
     const [selectedFile, setSelectedFile] = useState(null);
 
     useEffect(() => {
