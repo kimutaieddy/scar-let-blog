@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-
+import './App.css';
 import Home from './Home';
 import Resources from './Resources';
 
@@ -7,34 +7,24 @@ function App() {
    return (
     <Router>
       <header>
-        <nav style={{
-          backgroundColor: '#0066cc',
-          padding: '1rem'
-        }}>
-          <ul style={{
-            listStyle: 'none',
-            padding: 0,
-            margin: 0,
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '1rem'
-          }}>
-            <li><Link style={{ color: 'white', textDecoration: 'none', padding: '1.5rem' }} to="/">Home</Link></li>
-            <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/about">About Us</Link></li>
-            <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/credit">Credit Information Sharing</Link></li>
-            <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/resources">Resources</Link></li>
-            <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/conference">Conference</Link></li>
-            <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/training">Training</Link></li>
-            <li><Link style={{ color: 'white', textDecoration: 'none', padding: '0.5rem' }} to="/contact">Contact Us</Link></li>
+        <nav>
+          <ul>
+            <li><Link className="home-link" to="/">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/credit">Credit Information Sharing</Link></li>
+            <li><Link to="/resources">Resources</Link></li>
+            <li><Link to="/conference">Conference</Link></li>
+            <li><Link to="/training">Training</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </nav>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
     </Router>
   );
 }
-
 
 export default App;
