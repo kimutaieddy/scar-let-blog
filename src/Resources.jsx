@@ -1,14 +1,14 @@
 import React from "react";
 import './Resources.css';
 
-function Resources() {
+export function Resources() {
     return (
         <div>
             <section className="section">  
                 <div className="container">
                     <div className="card">
                         <h3>Access Resources</h3>
-                        <p>CIS Kenya allows you to access tones of publications and reports on matters of Credit Information Sharing.</p>
+                        <p>CIS Kenya allows you to access tons of publications and reports on matters of Credit Information Sharing.</p>
                     </div>
                 </div>
             </section>
@@ -16,4 +16,3 @@ function Resources() {
     );
 }
 
-export default Resources;
